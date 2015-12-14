@@ -9,9 +9,14 @@ export default class TodoList extends React.Component {
     ));
 
     return (
-      <ol>
+      <div style={style}>
         {todoItems}
-      </ol>
+      </div>
     );
   }
 }
+
+const style = {
+  marginTop: '1em',
+  cursor: 'default'
+};

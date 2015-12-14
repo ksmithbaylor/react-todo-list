@@ -12,16 +12,14 @@ export default class Todo extends React.Component {
   render() {
     const style = {
       textDecoration: this.state.completed ? 'line-through' : undefined,
-      cursor: 'default'
+      marginTop: '0',
+      marginBottom: '0.2em'
     };
 
     return (
-      <li
-        style={style}
-        onClick={this.toggleCompleted}
-      >
+      <p style={style} onClick={this.toggleCompleted}>
         {this.props.text}
-      </li>
+      </p>
     );
   }
 

@@ -8,7 +8,7 @@ export default class AddTodoForm extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <input type="text" ref="newTodo"></input>
+        <input type="text" ref="newTodo" style={style}></input>
         <input type="submit" value="Add"></input>
       </form>
     );
@@ -20,3 +20,8 @@ export default class AddTodoForm extends React.Component {
     this.refs.newTodo.value = '';
   }
 }
+
+const style = {
+  width: '200px',
+  marginRight: '5px'
+};

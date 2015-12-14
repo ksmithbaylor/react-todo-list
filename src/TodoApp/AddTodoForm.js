@@ -17,5 +17,6 @@ export default class AddTodoForm extends React.Component {
   handleSubmit = (event) => {
     event.preventDefault();
     this.props.onSubmit(this.refs.newTodo.value);
+    this.refs.newTodo.value = '';
   }
 }

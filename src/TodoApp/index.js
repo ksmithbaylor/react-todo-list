@@ -18,7 +18,6 @@ export default class App extends React.Component {
   }
 
   handleAddTodo = (newTodo) => {
-    alert('Adding ' + newTodo);
     this.setState({
       todos: [...this.state.todos, newTodo]
     });

@@ -10,7 +10,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div style={style}>
         <AddTodoForm onSubmit={this.handleAddTodo} />
         <TodoList todos={this.state.todos} />
       </div>
@@ -22,4 +22,8 @@ export default class App extends React.Component {
       todos: [...this.state.todos, newTodo]
     });
   }
+}
+
+const style = {
+  fontFamily: '"Roboto", Arial, sans-serif'
 }

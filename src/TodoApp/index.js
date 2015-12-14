@@ -3,7 +3,7 @@ import React from 'react';
 import AddTodoForm from './AddTodoForm';
 import TodoList from './TodoList';
 
-export default class App extends React.Component {
+export default class TodoApp extends React.Component {
   state = {
     todos: []
   }
